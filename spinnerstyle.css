@@ -1,0 +1,63 @@
+.quarter1-circle{
+            
+    height: 100px;
+    width: 100px;
+    border-radius: 150px 0px 0 0;
+    background-color: red;
+}
+.quarter2-circle{
+    
+    height: 100px;
+    width: 100px;
+    border-radius: 0px 0px 0px 150px;
+    background-color: blue;
+}
+.quarter-3-circle{
+    
+    height: 100px;
+    width: 100px;
+    border-radius: 0px 0px 150px 0;
+    background-color: yellow;
+
+}
+.quarter-4-circle{
+    
+    height: 100px;
+    width: 100px;
+    border-radius: 0px 150px 0px 0;
+    background-color: green;
+
+}
+
+#circle{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#circle {
+animation-name: spin;
+animation-duration: 5000ms;
+animation-iteration-count: infinite;
+animation-timing-function: linear; 
+}
+
+@keyframes spin {
+from {
+transform:rotate(0deg);
+
+}
+to {
+transform:rotate(360deg);
+
+}
+}
